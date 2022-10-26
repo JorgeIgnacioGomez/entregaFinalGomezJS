@@ -7,9 +7,8 @@ async function fetchProductos() {
 
 const catalogo = []
 
-fetchProductos().then(productos => {
-    catalogo = carrito
-    mostrarCarrito()
+fetchProductos().then(stockProductos => {
+    catalogo = stockProductos
 })
 
 const stockProductos = [
